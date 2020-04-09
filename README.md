@@ -16,7 +16,15 @@ A natural language processing(NLP) pipeline that cleans, pre-processes and model
 ## File Structure of the Repository
 
 ### 1. data
-<br>
+#### process_data.py
+The syntax for data cleaning, wrangling and saving cleaned data.
+#### disaster_messages.csv
+A dataset with messages published during natural disaster events
+#### disaster_categories.csv
+A dataset with message category information 
+#### response_online.db
+A SQL database storing the cleaned dataset.
+
 ### 2. models
 
 ### 3. app
