@@ -17,7 +17,7 @@ A natural language processing(NLP) pipeline that cleans, pre-processes and model
 
 ### 1. data
 #### process_data.py
-The syntax for data cleaning, wrangling and saving cleaned data.
+The syntax for a ETL pipeline that cleans, wrangles, and saves data.
 #### disaster_messages.csv
 A dataset with messages published during natural disaster events
 #### disaster_categories.csv
@@ -27,7 +27,7 @@ A SQL database storing the cleaned dataset.
 ### 2. models
 
 #### train_classifier.py
-The syntax to pre-process messages, build NLP pipline, train model, tune hyperparameters, evaluate model performance, test model and save final model.
+The syntax of a NLP Machine Learing pipleline that pre-processes messages, builds NLP pipline, trains model, tunes hyperparameters, evaluates model performance, tests model and saves final model.
 #### classifier0405.pkl
 The saved trained model.
 
@@ -38,5 +38,17 @@ Code to showcase results on the FLASK web App.
 A folder has two html files: master.html and go.html. These files configures the result showcase dashboard.
 
 ## Instruction
+1. Run the following commands in the Terminal or CMD under the project's root directory to set up your database and model.Note that it will take about 10 hrs to train the NLP Machine Learning model. To view my results, skip step 1. 
+
+    - To run ETL pipeline
+        `python3 data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/response_online.db`
+    - To run ML pipeline 
+        `python3 models/train_classifier.py data/response_online.db models/classifier.pkl`
+
+2. Run the following command in the app's directory to run your web app.
+    `python3 run.py`
+
+3. Now, open another Terminal Window. Type `env|grep WORK`. You'll see output contains SPACEID and SPACEDOMAIN. 
+<br> In a new web browser window, type in the following: `https://SPACEID-3001.SPACEDOMAIN`,subsituting SPACEID and SPACEDOMAIN in the terminal window. 
 
 
