@@ -1,17 +1,17 @@
 # NLP Pipeline for Disaster Response
 
 ## Overview 
-A natural language processing(NLP) pipeline that cleans, pre-processes and models raw published messages (e.g. twitter feeds, SMS, etc) when natural disasters happen.s
+A natural language processing(NLP) pipeline that cleans, pre-processes and models published raw messages(e.g. twitter feeds, SMS, etc) in the event of natural disasters.
 
 ## Programming Language
-<br> Python -- Data cleaning; text pre-processing; building a NLP machine learning model pipeline to train models, tune hyperparameters and test model. 
+<br> Python -- data cleaning; text pre-processing; building a NLP machine learning model pipeline to train models, tune hyperparameters and test model. 
 <br>html -- Showcase restuls
 
 ## Packges and App
 <br>General: numpy, pandas, sys, pickle
 <br>Data cleaning: sqlalchemy, re 
 <br>text pre-processing: nltk
-<br>NLP Machine Learning Modeling: sklearn
+<br>NLP machine learning modeling: sklearn
 
 ## File Structure of the Repository
 
@@ -27,7 +27,7 @@ A SQL database storing the cleaned dataset.
 ### 2. models
 
 #### train_classifier.py
-The syntax of a NLP Machine Learing pipleline that pre-processes messages, builds NLP pipline, trains model, tunes hyperparameters, evaluates model performance, tests model and saves final model.
+The syntax of a NLP machine learing pipleline that pre-processes messages, builds NLP pipline, trains model, tunes hyperparameters, evaluates model performance, tests model and saves final model.
 #### classifier0405.pkl
 The saved trained model.
 
@@ -35,7 +35,7 @@ The saved trained model.
 #### run.py
 Code to showcase results on the FLASK web App. 
 #### template
-A folder has two html files: master.html and go.html. These files configures the result showcase dashboard.
+A folder has two html files: master.html and go.html. These files configure the result showcase dashboard on FLASK.
 
 ## Instruction
 1. Run the following commands in the Terminal or a CMD window under the project's root directory to set up your database and model. Note that it will take about 10 hrs to train the NLP Machine Learning model. To view my results, skip step 1. 
