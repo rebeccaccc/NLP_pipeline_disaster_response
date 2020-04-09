@@ -38,12 +38,12 @@ Code to showcase results on the FLASK web App.
 A folder has two html files: master.html and go.html. These files configures the result showcase dashboard.
 
 ## Instruction
-1. Run the following commands in the Terminal or CMD under the project's root directory to set up your database and model.Note that it will take about 10 hrs to train the NLP Machine Learning model. To view my results, skip step 1. 
+1. Run the following commands in the Terminal or a CMD window under the project's root directory to set up your database and model. Note that it will take about 10 hrs to train the NLP Machine Learning model. To view my results, skip step 1. 
 
     - To run ETL pipeline
-        `python3 data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/response_online.db`
+        <br>`python3 data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/response_online.db`
     - To run ML pipeline 
-        `python3 models/train_classifier.py data/response_online.db models/classifier.pkl`
+        <br>`python3 models/train_classifier.py data/response_online.db models/classifier.pkl`
 
 2. Run the following command in the app's directory to run your web app.
     `python3 run.py`
