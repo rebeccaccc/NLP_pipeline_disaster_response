@@ -24,8 +24,12 @@ A dataset with messages published during natural disaster events
 A dataset with message category information 
 #### response_online.db
 A SQL database storing the cleaned dataset.
-
 ### 2. models
+
+#### train_classifier.py
+The syntax to pre-process messages, build NLP pipline, train model, tune hyperparameters, evaluate model performance, test model and save final model.
+#### classifier.0405.pkl
+The saved trained model.
 
 ### 3. app
 
