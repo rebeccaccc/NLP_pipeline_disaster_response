@@ -28,8 +28,10 @@ A SQL database storing the cleaned dataset.
 
 #### train_classifier.py
 The syntax of a NLP machine learing pipleline that pre-processes messages, builds NLP pipline, trains model, tunes hyperparameters, evaluates model performance, tests model and saves final model.
-#### classifier0405.pkl
+#### classifier0409.pkl
 The saved trained model.
+#### eval_result.csv
+The model performance evaluation results. 
 
 ### 3. app
 #### run.py
